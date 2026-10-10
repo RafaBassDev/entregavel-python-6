@@ -11,8 +11,6 @@ Este projeto simula uma loja que trabalha com produtos físicos e digitais. Cada
 - **Produto digital:** preço original - desconto percentual.
 - **Carrinho:** guarda os produtos escolhidos e soma os preços finais.
 
-Escolhi esse exemplo porque ele continua o tema de produtos trabalhado anteriormente e é parecido com o exercício de polimorfismo da Aula 06.
-
 ## 2. Arquivos
 
 ```text
@@ -116,21 +114,21 @@ print(mouse.preco)  # Continua 50
 
 ## 7. Como executar
 
-Abra esta pasta no VS Code e utilize o terminal:
+Para executar o projeto, abra a pasta no VS Code e digite no terminal:
 
 ```bash
 python sistema_loja.py
 ```
 
-O programa cria **10 produtos** (5 físicos e 5 digitais), mais **1 carrinho**, totalizando **11 objetos**. Ele percorre todos os produtos em um mesmo `for`, chama `calcular_preco_final()` e mostra como cada classe calcula o valor de um jeito diferente.
+O programa cria **10 produtos** (5 físicos e 5 digitais) e **1 carrinho**, totalizando 11 objetos. Através de um laço `for`, os produtos são percorridos e seus preços finais são calculados de acordo com o tipo, demonstrando o conceito de polimorfismo.
 
-Para executar os testes:
+Para executar os testes, utilize:
 
 ```bash
 python testes.py
 ```
 
-Os testes verificam cálculos, herança, representações, ordenação, carrinho, erros de validação e a impossibilidade de instanciar a classe abstrata.
+Os testes verificam os cálculos dos produtos, a herança entre as classes, a ordenação, o funcionamento do carrinho e o tratamento de valores inválidos. Também verificam que não é possível criar diretamente um objeto da classe abstrata.
 
 ## 8. Exemplos de saída
 
