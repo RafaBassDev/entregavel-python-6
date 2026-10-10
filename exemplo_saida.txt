@@ -1,0 +1,40 @@
+========== SISTEMA DE LOJA - SPRINT 6 ==========
+Produtos criados: 10
+
+Produtos e precos finais (polimorfismo):
+Notebook | Preco final: R$ 2550.00 | Frete: R$ 50.00
+Mouse | Preco final: R$ 60.90 | Frete: R$ 15.00
+Teclado | Preco final: R$ 140.00 | Frete: R$ 20.00
+Monitor | Preco final: R$ 940.00 | Frete: R$ 40.00
+Fone de ouvido | Preco final: R$ 162.00 | Frete: R$ 12.00
+Curso Python | Preco final: R$ 180.00 | Desconto: 10%
+E-book de Logica | Preco final: R$ 40.00 | Desconto: 20%
+Curso Git | Preco final: R$ 127.50 | Desconto: 15%
+Template de Portfolio | Preco final: R$ 60.00 | Desconto: 25%
+Apostila HTML | Preco final: R$ 28.50 | Desconto: 5%
+
+Produtos ordenados por preco final (__lt__):
+Apostila HTML: R$ 28.50
+E-book de Logica: R$ 40.00
+Template de Portfolio: R$ 60.00
+Mouse: R$ 60.90
+Curso Git: R$ 127.50
+Teclado: R$ 140.00
+Fone de ouvido: R$ 162.00
+Curso Python: R$ 180.00
+Monitor: R$ 940.00
+Notebook: R$ 2550.00
+
+Resumo do carrinho (composicao):
+Carrinho de Ana | 10 produtos | Total: R$ 4288.90
+Exemplo de __repr__: ProdutoFisico('Notebook', 2500, 50)
+
+Testes de validacao com try/except:
+Preco invalido: O preco deve ser um numero maior ou igual a zero.
+Desconto invalido: O desconto deve estar entre 0 e 100.
+Alteracao bloqueada: O preco deve ser um numero maior ou igual a zero.
+Item invalido: O carrinho aceita apenas produtos.
+Classe abstrata: nao pode criar um Produto diretamente.
+
+Preco preservado do Notebook: R$ 2500.00
+===============================================
