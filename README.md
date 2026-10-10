@@ -33,7 +33,7 @@ classDiagram
         <<abstract>>
         +nome
         +preco
-        +calcular_preco_final() *
+        +calcular_preco_final()*
         +__str__()
         +__repr__()
         +__lt__()
@@ -66,7 +66,7 @@ classDiagram
 
 **`ProdutoDigital`** também é um Produto. Reaproveita a classe mãe, mas aplica um desconto percentual no valor final.
 
-**`Carrinho`** não é um Produto: ele **tem** produtos. Por isso, usei composição (associação com objetos da classe Produto), guardando-os em uma lista interna. Cada produto pode existir independentemente do carrinho.
+**`Carrinho`** não é um Produto: ele tem produtos. Por isso, utilizei uma relação de agregação, armazenando os objetos da classe Produto em uma lista interna. Cada produto pode existir independentemente do carrinho.
 
 ## 5. Conceitos de POO utilizados
 
@@ -82,7 +82,7 @@ classDiagram
 | Herança | `ProdutoFisico(Produto)` e `ProdutoDigital(Produto)` |
 | Reaproveitamento | `super().__init__()` nas duas classes filhas |
 | Polimorfismo | `calcular_preco_final()` nas duas classes filhas |
-| Composição | `Carrinho` guarda objetos `Produto` |
+| Agregação | `Carrinho` guarda objetos `Produto` (relação "tem um") |
 | Exceções | `try/except` nos exemplos de dados inválidos |
 
 Não criei `__eq__`, porque dois produtos com o mesmo preço não são necessariamente o mesmo produto. O enunciado pede esse método apenas quando for aplicável.
@@ -155,17 +155,8 @@ Preco invalido: O preco deve ser um numero maior ou igual a zero.
 
 O resultado completo está no arquivo `exemplo_saida.txt`.
 
-## 9. Como publicar no GitHub pelo VS Code
+## 9. Observações
 
-1. Abra a pasta do projeto no VS Code.
-2. Abra **Controle do Código-Fonte** (`Ctrl + Shift + G`).
-3. Se necessário, clique em **Inicializar Repositório**.
-4. Prepare os arquivos e faça o commit com a mensagem `Entrega Sprint 6 - Sistema de Loja POO`.
-5. Clique em **Publicar Branch** e escolha um repositório **público** no GitHub.
-6. Confira se os quatro arquivos aparecem no repositório e entregue o link solicitado pela faculdade.
+O código segue as boas práticas da PEP 8, utilizando **PascalCase** nos nomes das classes e **snake_case** nas variáveis e métodos. Também foram adicionadas docstrings para explicar a função de cada classe e método.
 
-## 10. Observações
-
-Os nomes das classes seguem **PascalCase** e as variáveis e funções seguem **snake_case**, conforme PEP 8. Usei docstrings para identificar a responsabilidade das classes e dos métodos.
-
-O programa é uma simulação didática: não processa pagamentos, não calcula tributos reais e não armazena pedidos em banco de dados.
+O sistema foi desenvolvido para fins acadêmicos, com o objetivo de aplicar os conceitos de Programação Orientada a Objetos. Por isso, não realiza pagamentos reais, cálculos de impostos ou armazenamento de dados em banco de dados.
